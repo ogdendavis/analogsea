@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" value="Sign up for a super-awesome AnalogSea account here!">
+  <link href="index.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+  <header role="banner">
+    <img src="analogsea-logo.png">
+  </header>
+
+  <main>
+    <form action="/signup/" method="post">
+      <h1>Sign up</h1>
+      <label for="email" required>Email</label>
+      <input id="email" name="email" type="email" placeholder="jose@gmail.com" required>
+      <label for="password" required>Password</label>
+      <input id="password" name="password" type="password" placeholder="at least 5 characters" pattern="[A-Za-z0-9`~!@#$%^&*()-_=+{}|[\]\\;':,.\/<>?]{5,}" required>
+      <button type="submit">Sign up</button>
+    </form>
+  </main>
+
+  <footer>
+    Already have an account? <a href="#">Log in</a>
+  </footer>
+</body>
+</html>
