@@ -2,28 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="description" value="Sign up for a super-awesome AnalogSea account here!">
+  <meta name="description" content="Sign up for a super-awesome AnalogSea account here!">
+  <title>Sign up for AnalogSea</title>
   <link href="index.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
   <header role="banner">
-    <img src="analogsea-logo.png" height="35px" class="logo">
+    <img src="analogsea-logo.png" height="35" class="logo" alt="AnalogSea logo: three stylized waves next to the company name">
   </header>
 
   <main>
     <form action="/signup/" method="post">
       <h1>Sign up</h1>
-      <label for="email" required>Email</label>
+      <label for="email">Email</label>
       <input id="email" name="email" type="email" placeholder="jose@gmail.com" required>
-      <label for="password" required>Password</label>
+      <label for="password">Password</label>
       <input id="password" name="password" type="password" placeholder="at least 5 characters" pattern="[A-Za-z0-9`~!@#$%^&*()-_=+{}|[\]\\;':,.\/<>?]{5,}" required>
       <button type="submit">Sign up</button>
     </form>
   </main>
 
   <footer>
-    Already have an account? <a href="#">Log in</a>
+    Already have an account? <a href="/login">Log in</a>
   </footer>
 </body>
 </html>
